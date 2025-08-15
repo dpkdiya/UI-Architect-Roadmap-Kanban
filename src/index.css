@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --card-bg: #ffffff; }
+:root {
+  --category-core: #3B82F6;
+  --category-framework: #10B981;
+  --category-state: #8B5CF6;
+  --category-architecture: #F97316;
+  --category-perf: #EF4444;
+  --category-tooling: #FACC15;
+  --category-leadership: #92400E;
+}
+
+html, body, #root { height: 100%; }
+
+.card { @apply bg-white rounded-2xl shadow-soft p-4 border border-gray-100; }
+.card-title { @apply text-sm font-semibold text-gray-800; }
+.badge { @apply inline-flex items-center gap-2 text-xs font-medium px-2 py-0.5 rounded-full border; }
+.badge-dot { @apply w-2 h-2 rounded-full; }
+.column { @apply bg-white rounded-2xl border border-gray-200 p-4 min-h-[300px]; }
+.column-title { @apply text-sm font-semibold text-gray-700 mb-3; }
+.btn { @apply inline-flex items-center justify-center px-3 py-2 rounded-lg text-sm font-medium border shadow-soft bg-white hover:bg-gray-50; }
+.input { @apply w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500; }
+.textarea { @apply w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500; }
+.select { @apply w-full border rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500; }
